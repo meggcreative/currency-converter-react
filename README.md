@@ -1,3 +1,23 @@
+# Currency Converter for YouCode project with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).It is a simple currency converter application.This currency converter shows which amount we will get and how much if we want to change PLN for it. Currency to pick: EUR/USD/GBP.
+## Preview the coverter
+
+[ Lets go to currency converter](https://meggcreative.github.io/currency-converter-react/)
+
+## Used Technologies
+1. Create React App
+2. JSX
+3. CSS Flexbox / Grid
+4. BEM convenction
+5. ES6+ 
+
+## Usage
+1. Choose currency which You want to be convert from PLN
+2. Enter Your amount in PLN
+3. Press button "Przelicz"
+4. The Final converted amount You will get on the bottom of page
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -13,11 +33,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
