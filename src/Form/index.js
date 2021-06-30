@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import "./style.css";
 import Fieldset from "./Fieldset";
 import currencies from "../Currencies/currencies";
 import Result from "./Result";
+import {Select, Button} from "./styled.js"
 
 
 const Form = ({ calculateResult, result }) => {
@@ -16,13 +16,12 @@ const Form = ({ calculateResult, result }) => {
     }
 
     return (
-        <form onSubmit={onFormSubmit} className="form">
+        <form onSubmit={onFormSubmit}>
             <Fieldset
                 legendContent="Na jaką walutę, którą chcesz zamienić PLN?"
                 fieldsetBody={
-                    <label className="form__label">
-                        <select
-                            className="form__amount"
+                    <label>
+                        <Select
                             value={currency}
                             onChange={(event) => setCurrency(event.target.value)}
                         >
@@ -34,7 +33,7 @@ const Form = ({ calculateResult, result }) => {
                                     {currency.label}
                                 </option>
                             )))}
-                        </select>
+                        </Select>
                     </label>
                 }
             />
@@ -44,10 +43,9 @@ const Form = ({ calculateResult, result }) => {
                 fieldsetBody={
                     <>
                         Podaj kwotę w PLN:
-                        <input
+                        <Select as="input"
                             value={amount}
                             onChange={({ target }) => setAmount(target.value)}
-                            className=" form__amount"
                             name="amount"
                             type="number"
                             step="0.01"
@@ -58,7 +56,7 @@ const Form = ({ calculateResult, result }) => {
             />
 
             <p>
-                <button className="form__button">Przelicz</button>
+                <Button>Przelicz</Button>
             </p>
 
             <Result result={result} />

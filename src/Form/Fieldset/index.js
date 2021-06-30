@@ -1,11 +1,13 @@
+import {StyledFieldset, Legend} from "../styled.js";
+
 const Fieldset = ({ legendContent, fieldsetBody }) => {
     return (
-        <fieldset className="form__fieldset">
-            <legend className="form__legend">{legendContent}</legend>
+        <StyledFieldset>
+            <Legend>{legendContent}</Legend>
             <p>
                 {fieldsetBody}
             </p>
-        </fieldset>
+        </StyledFieldset>
     );
 };
 

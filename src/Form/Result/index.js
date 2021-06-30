@@ -1,6 +1,8 @@
+import {StyledContener} from "../styled.js";
+
 const Result = ({ result }) => {
     return (
-        <p className="form__converter">
+        <StyledContener>
             {result !== undefined && (
                 <>
                     {result.givenAmount.toFixed(2)}&nbsp;PLN&nbsp;=&nbsp;
@@ -9,7 +11,7 @@ const Result = ({ result }) => {
                     </strong>
                 </>
             )}
-        </p>
+        </StyledContener>
     )
 };
 
