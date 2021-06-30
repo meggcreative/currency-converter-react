@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Fieldset from "./Fieldset";
 import currencies from "../Currencies/currencies";
 import Result from "./Result";
-import {Select, Button} from "./styled.js"
+import { Select, Button } from "./styled.js"
 
 
 const Form = ({ calculateResult, result }) => {

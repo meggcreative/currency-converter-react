@@ -12,7 +12,7 @@ export const StyledFieldset = styled.fieldset`
     font-size: 20px;
     max-width: 500px;
 `
-export const Select  = styled.select`
+export const Select = styled.select`
     border: 1px solid #ccc;
     padding: 5px;
     max-width: 250px;
