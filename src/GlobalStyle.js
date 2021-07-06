@@ -1,4 +1,7 @@
-html {
+import { createGlobalStyle } from "styled-components";
+import background from "./images/backgroundImage.png";
+export const GlobalStyle = createGlobalStyle`
+    html {
   box-sizing: border-box;
 }
 
@@ -18,7 +21,7 @@ body {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   background-size: cover;
-  background-image: url("./images/backgroundImage.png")
+  background-image: url("${background}");
 }
 
-
+`;
