@@ -6,6 +6,6 @@ export const StyledHeader = styled.header`
     max-width: 600px;
     text-align: center;
     font-size: 40px;
-    color: rgb(94, 77, 77);
+    color: ${({ theme }) => theme.color.donJuan};
     font-weight: bold;
 `

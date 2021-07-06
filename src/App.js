@@ -18,12 +18,14 @@ function App() {
   }
   return (
     <>
+
       <Header title="KALKULATOR WALUT" />
 
       <Container>
         <Clock />
         <Form calculateResult={calculateResult} result={result} />
       </Container>
+
     </>
   );
 }

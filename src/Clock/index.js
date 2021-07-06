@@ -1,5 +1,5 @@
-import {useCurrentDate} from "./useCurrentDate.js";
-import {StyledContainer} from "./styled.js";
+import { useCurrentDate } from "./useCurrentDate.js";
+import { StyledContainer } from "./styled.js";
 
 const Clock = () => {
     const date = useCurrentDate();
