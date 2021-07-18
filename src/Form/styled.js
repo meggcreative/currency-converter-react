@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import LoadingImage from "../images/loading.gif";
 
 export const StyledFieldset = styled.fieldset`
     padding: 20px;
@@ -55,4 +56,17 @@ export const StyledContener = styled.p`
     color: rgb(188, 209, 212);
     font-size: 25px;
     max-width: 400px;
+`
+export const Loading = styled.p`
+    color: ${({theme}) => theme.color.parisWhite};
+`
+export const Failure = styled.p`
+    color: ${({theme}) => theme.color.crimson};
+`
+export const StyledImage = styled.img.attrs({
+    src: LoadingImage,
+})`
+        width: 200px;
+        margin-left: 100px;
+        ;
 `
