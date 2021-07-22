@@ -55,7 +55,7 @@ export const StyledContener = styled.p`
     position: relative;
     color: rgb(188, 209, 212);
     font-size: 25px;
-    max-width: 400px;
+    max-width: auto;
 `
 export const Loading = styled.p`
     color: ${({theme}) => theme.color.parisWhite};
