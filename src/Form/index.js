@@ -84,6 +84,7 @@ const Form = () => {
                                             onChange={({ target }) => setAmount(target.value)}
                                             name="amount"
                                             type="number"
+                                            min= "0"
                                             step="0.01"
                                             required
                                         />
